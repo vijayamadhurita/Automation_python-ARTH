@@ -4,6 +4,7 @@ import hadoop
 import aws
 import docker
 import linux_cmd
+import lvm
 def mainf():
 	while True:
 		system("clear;tput setaf 5")
@@ -20,9 +21,10 @@ def mainf():
 		\t\t1. Hadoop
 		\t\t2. AWS
 		\t\t3. Docker
-		\t\t4. Linux Commands''')
+		\t\t4. Linux Commands
+		\t\t5. LVM''')
 		system("tput setaf 1")
-		print("\t\t\t\t5. EXIT")
+		print("\t\t\t\t6. EXIT")
 		system("tput setaf 5")
 		opt = input("\nEnter your choice: ")
 		system("tput setaf 2")
@@ -35,6 +37,8 @@ def mainf():
 		elif opt=='4':
 			linux_cmd.cmd()
 		elif opt=='5':
+			lvm.lvm()
+		elif opt=='6':
 			print("...Exited!")
 			system("tput setaf 7")
 			exit()
