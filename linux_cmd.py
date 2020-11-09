@@ -9,8 +9,9 @@ while True:
 	print("5: add a user")
 	print("6: launch applications")
 	print("7: navigate to a directory ") 
-	print("8: check the current directoy u are in ")		
-	print("9: exit")
+	print("8: check the current directoy u are in ")
+	print("9: See the details of your network information")
+	print("10: exit")
 	n=int(input())
 	if n==1:
 		print(os.system("date"))
@@ -41,6 +42,8 @@ while True:
 	elif n==8:
 		os.system("pwd")
 	elif n==9:
+		os.system("ifconfig")
+	elif n==10:
 		exit()
 	else:
 		print(" Enter a valid choice !!")
