@@ -40,7 +40,7 @@ def mainf():
 			linux_cmd.cmd()
 		elif opt=='5':
 			lvm.lvm()
-		elif opt=='5':
+		elif opt=='6':
 			webserver.web()
 		elif opt=='7':
 			print("...Exited!")
